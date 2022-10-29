@@ -1,0 +1,263 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: seashell;
+  color: darkseagreen;
+  font-family: 'Bai jamjuree', sans-serif; 
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1.logo::first-letter {
+  color: #1e90ff;
+  font-size: 200%;
+}
+.logo {
+  font-family: 'Vivaldi';
+  color: goldenrod;
+}
+.preview {
+  height: 700px;
+  max-width: 100%;
+  background-image: url(https://t4.ftcdn.net/jpg/05/02/37/03/240_F_502370323_O8pirlqn5PvV7b4XGDciDfrrehZMB9DK.jpg); 
+  background-position: center center; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-right: 50px;
+}
+
+li {
+  padding: 15px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ nav a:hover {
+  text-decoration: underline;
+}
+
+.about-me img {
+  width: 100%;
+  mix-blend-mode: darken;
+}
+.container {
+  max-width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  overflow: hidden;
+}
+.preview-content {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  color: #fff;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+h2 {
+  text-align: center;
+}
+.preview-content p {
+  margin: 15px 0;
+}
+.about-me {
+  width: 100%;
+  height: auto;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  max-width: 500px;
+}
+.services {
+  width: 100%;
+  height: auto;
+  padding: 100px 70px 0px;
+  display: flex;
+  flex-direction: column;  
+  place-items: flex-start !important;
+  ;
+}
+.services ul {
+  list-style: circle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.services h1 {
+  margin: 20px 0;
+}
+.project {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project h1 {
+  margin: 20px 0;
+}
+.projects-grid {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 50px;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+      }
+      
+.projects-image {
+        display:flex;
+        width: 100%;
+        height: 100%;
+      }
+      
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .responsive-img {
+      width: 100%;
+      height: auto;
+    }
+figcaption {
+  color: darkseagreen;
+  text-align: center;
+}
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    }
+.contact p {
+  color: darkseagreen;
+  margin: 15px 0;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+}
+.contact-details {
+      font-size: large;
+    }
+    i {
+      color: darkseagreen;
+      padding: 0px 8px;
+    }
+    .contact p {
+      font-style: italic;
+      text-align: center;
+    }
+
+    .contact span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 4rem;
+      padding: 0 5px;
+    }
+
+    .contact span:hover {
+      transform: scale(0.2);
+    }
+footer {
+  padding: 0 50px;
+}
+  footer a {
+    text-decoration: none;
+  }
+    footer ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2rem;
+      list-style: none;
+    }
+    footer span {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5px;
+      margin-left: 4px;
+      font-size: 1em;
+    }
+    footer li {
+      padding: 0 10px;
+    }
+    @media only screen and (max-width: 600px) {
+      body {
+        font-size: 15px;
+      }
+      na ul {
+        padding-right: 0;
+      }
+      nav li {
+        padding: 5px;
+      }
+      .logo {
+        font-size: 25px;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      .about-me {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .projects-grid {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact span {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-links {
+        display: flex;
+        flex-direction: column;
+      }
+    }
