@@ -1,6 +1,4 @@
-le
 
-README.md
 
 # Hi, I'm Kingsley! 👋
 
