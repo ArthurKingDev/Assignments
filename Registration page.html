@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Registration page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background-image: url();
+        }
+
+        form {
+            position: absolute;
+            width: 25%;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index.html">
+        <table>
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" name="fname" id="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" name="lname" id="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="pnumber">Phone Number:</label></td>
+                <td><input type="number" name="pnumber" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><select name="gender" id="dropdown">
+                        <option value="gender">Male</option>
+                        <option value="gender">Female</option>
+                        <option value="gender">Prefer not to say</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date of Birth:</label></td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td><label for="color">Favorite color:</label></td>
+                <td><input type="color" name="color" id="color"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="reset"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
